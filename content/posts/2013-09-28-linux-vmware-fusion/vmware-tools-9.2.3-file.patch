@@ -1,0 +1,10 @@
+--- a/file.c.orig
++++ b/file.c
+@@ -25,6 +25,7 @@
+ /* Must come before any kernel header file. */
+ #include "driver-config.h"
+ 
++#include <linux/aio.h>
+ #include <linux/errno.h>
+ #include <linux/module.h>
+ #include <linux/signal.h>
