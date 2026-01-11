@@ -6,9 +6,6 @@ theme = "hugo-coder"
 [pagination]
 pagerSize = 20
 
-[markup.highlight]
-style = "github-dark"
-
 [params]
 author = "rim-buei"
 info = ""
