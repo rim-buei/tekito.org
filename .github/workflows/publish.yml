@@ -1,4 +1,4 @@
-name: Deploy
+name: Publish
 
 on:
   push:
@@ -8,18 +8,22 @@ on:
     branches:
       - main
 
+permissions:
+  contents: read
+  id-token: write
+
 jobs:
-  deploy:
+  publish:
     runs-on: ubuntu-24.04
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           submodules: true
           fetch-depth: 0
 
-      - name: Setup Hugo
+      - name: Set up Hugo
         uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: '0.154.3'
@@ -27,8 +31,8 @@ jobs:
       - name: Build
         run: hugo --minify
 
-      - name: Set up AWS Credentials
-        uses: aws-actions/configure-aws-credentials@v2
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v5
         with:
-          role-to-assume: ${{ secrets.AWS_ROLE_TO_ASSUME }}
           aws-region: ${{ secrets.AWS_REGION }}
+          role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
