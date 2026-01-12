@@ -36,3 +36,7 @@ jobs:
         with:
           aws-region: ${{ secrets.AWS_REGION }}
           role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
+
+      - name: Upload contents to S3
+        run: |
+          aws s3 sync --quiet --delete ./public s3://${{ secrets.AWS_S3_BUCKET }}
