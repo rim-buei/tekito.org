@@ -25,6 +25,10 @@ jobs:
         with:
           hugo-version: '0.154.3'
 
+      - name: Tweak hugo.toml
+        run: |
+          sed -E 's|^(author[[:space:]]*=[[:space:]]*)".*"|\1"${{ secrets.AUTHOR }}"|' -i hugo.toml
+
       - name: Build
         run: hugo --minify
 
