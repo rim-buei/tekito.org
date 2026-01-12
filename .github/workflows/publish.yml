@@ -4,9 +4,6 @@ on:
   push:
     branches:
       - main
-  pull_request:
-    branches:
-      - main
 
 permissions:
   contents: read
@@ -31,12 +28,12 @@ jobs:
       - name: Build
         run: hugo --minify
 
-      - name: Configure AWS Credentials
+      - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v5
         with:
           aws-region: ${{ secrets.AWS_REGION }}
           role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
 
-      - name: Upload contents to S3
+      - name: Upload contents to the S3 bucket
         run: |
           aws s3 sync --quiet --delete ./public s3://${{ secrets.AWS_S3_BUCKET }}
