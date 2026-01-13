@@ -36,4 +36,8 @@ url = "https://steamcommunity.com/id/rim_buei"
 [[menu.main]]
 name = "Blog"
 weight = 1
-url  = "posts/"
+url = "posts/"
+[[menu.main]]
+name = "RSS Feed"
+weight = 2
+url = "index.xml"
