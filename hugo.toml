@@ -13,11 +13,8 @@ author = "rim-buei"
 info = ""
 description = ""
 keywords = "blog,developer"
-since = 2010
-
 avatarURL = "images/avatar.jpg"
-favicon_16 = "images/favicon-16x16.png"
-favicon_32 = "images/favicon-32x32.png"
+since = 2010
 
 colorScheme = "auto"
 hideColorSchemeToggle = false
