@@ -3,6 +3,8 @@ title = "tekito.org"
 languageCode = "ja-jp"
 theme = "hugo-coder"
 
+googleAnalytics = "G-6EEEPYHCGB"
+
 [pagination]
 pagerSize = 20
 
@@ -11,8 +13,11 @@ author = "rim-buei"
 info = ""
 description = ""
 keywords = "blog,developer"
-avatarURL = "images/avatar.jpg"
 since = 2010
+
+avatarURL = "images/avatar.jpg"
+favicon_16 = "images/favicon-16x16.png"
+favicon_32 = "images/favicon-32x32.png"
 
 colorScheme = "auto"
 hideColorSchemeToggle = false
