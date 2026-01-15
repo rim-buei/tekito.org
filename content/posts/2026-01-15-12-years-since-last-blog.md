@@ -1,5 +1,4 @@
 +++
-draft = true
 date = 2026-01-15T21:00:00+09:00
 title = "12 年ぶりの Blog 更新"
 description = ""
