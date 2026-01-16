@@ -36,7 +36,7 @@ weight = 3
 url = "https://steamcommunity.com/id/rim_buei"
 [[params.social]]
 name = "LinkedIn"
-icon = "fa-brands fa-square-linkedin fa-2x"
+icon = "fa-brands fa-linkedin-in fa-2x"
 weight = 4
 url = "https://www.linkedin.com/in/rim-buei"
 
