@@ -34,6 +34,11 @@ name = "Steam"
 icon = "fa-brands fa-steam fa-2x"
 weight = 3
 url = "https://steamcommunity.com/id/rim_buei"
+[[params.social]]
+name = "LinkedIn"
+icon = "fa-brands fa-linkedin fa-2x"
+weight = 4
+url = "https://www.linkedin.com/in/rim-buei"
 
 [[menu.main]]
 name = "Blog"
