@@ -1,3 +1,3 @@
-# tekito.org
+# tekito.net
 
 This is my personal blog built with [Hugo](https://gohugo.io/).

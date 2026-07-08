@@ -8,7 +8,7 @@ description = ""
 
 早いもので、前回の Blog 更新から約 12 年も経ってしまいました (唖然)。
 
-Blog 記事自体はまったく書いていなかったものの、ほそぼそとしたメンテは続けておりました。たとえば、この [tekito.org](https://tekito.org) をホストしているサーバをさくらの VPS から DigitalOcean に移行したり、ドメインをお名前から Cloudflare に移管したり、Static site generator を Pelican から Hugo に乗り換えたり、Let's Encrypt を使って HTTPS 化したり。。。
+Blog 記事自体はまったく書いていなかったものの、ほそぼそとしたメンテは続けておりました。たとえば、この [tekito.net](https://tekito.net) をホストしているサーバをさくらの VPS から DigitalOcean に移行したり、ドメインをお名前から Cloudflare に移管したり、Static site generator を Pelican から Hugo に乗り換えたり、Let's Encrypt を使って HTTPS 化したり。。。
 
 今では Blog は自ホストするよりも、[note](https://note.com) や [Medium](https://medium.com) のようなサービスを使って書くのがすっかり一般的になりましたね。
 

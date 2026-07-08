@@ -72,7 +72,7 @@ needed by Pelican.
 > Who will be the author of this web site? Yusaku
 > What will be the default language of this web site? [en] ja
 > Do you want to specify a URL prefix? e.g., http://example.com   (Y/n)
-> What is your URL prefix? (see above example; no trailing slash) http://blog.tekito.org
+> What is your URL prefix? (see above example; no trailing slash) http://blog.tekito.net
 > Do you want to enable article pagination? (Y/n)
 > How many articles per page do you want? [10]
 > Do you want to generate a Fabfile/Makefile to automate generation and publishing? (Y/n)
@@ -185,7 +185,7 @@ SSH, rsync, FTP でアップロードする場合は `Makefile` の `SSH_*`, `FT
 ```text
 $ cat Makefile
 ..
-SSH_HOST=tekito.org
+SSH_HOST=tekito.net
 SSH_PORT=22
 SSH_USER=pelican
 SSH_TARGET_DIR=/home/pelican/blog

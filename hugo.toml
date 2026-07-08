@@ -1,5 +1,5 @@
-baseURL = "https://tekito.org"
-title = "tekito.org"
+baseURL = "https://tekito.net"
+title = "tekito.net"
 languageCode = "ja-jp"
 theme = "hugo-coder"
 
